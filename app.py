@@ -1,6 +1,4 @@
-from flask import Flask
-from flask import render_template
-from flask import request
+from flask import Flask, render_template, request
 from rss.Feed import *
 
 app = Flask(__name__)
@@ -23,4 +21,4 @@ def showResults(url=None):
     return render_template('results.html', title=title, description=description, published=published, results=results)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=True)
+    app.run(debug=True)
