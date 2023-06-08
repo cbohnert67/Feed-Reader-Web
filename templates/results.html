@@ -9,13 +9,14 @@
                 {% endif %}
                 {% for result in results %}
                     <div class="w3-container w3-theme-d4 w3-left-align w3-margin">
-                        <h3><a href="{{ result[3] }}" target="_blank">{{ result['title'] }}</a></h3>
-                        <p>{{ result['description'] }}</p>
-                        <p>Published on {{ result['published'] }}</p>
+                        <h3><a href="{{ result['link'] }}" target="_blank">{{ result['title'] }}</a></h3>
+                        <p>{{ result['description']|safe }}</p>
+                        <p>Publié le {{ result['published'] }}</p>
                     </div>
                 {% endfor%}
             {% else %}
-            <h1>Please enter an url!</h1>
+            <h1>Veuillez svp entrer une url valide.</h1>
+            <p>Exemple: https://www.lemonde.fr/rss/une.xml</p>
             {% endif %}
 
     </div>

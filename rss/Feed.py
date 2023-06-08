@@ -1,6 +1,8 @@
 import feedparser
 import datetime
 import dateutil.parser as parser
+import locale
+locale.setlocale(locale.LC_TIME,'')
 
 class Feed:
 
@@ -40,7 +42,7 @@ class Feed:
     def getPublished(self):
         """ Returns the feed's published date """
         try:
-            published = parser.parse(self.data.feed.published).strftime("%A %d-%m-%Y %H:%M")
+            published = parser.parse(self.data.feed.published).strftime("%A %d-%m-%Y").capitalize()
         except:
             published = "No date"
         finally:
@@ -110,4 +112,4 @@ class Entry:
     
     def getPublished(self):
         """ returns entry's published date """
-        return parser.parse(self.published).strftime("%A %d-%m-%Y %H:%M")
+        return parser.parse(self.published).strftime("%A %d-%m-%Y").capitalize()
