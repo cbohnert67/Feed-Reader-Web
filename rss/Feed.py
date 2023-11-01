@@ -1,5 +1,4 @@
 import feedparser
-import datetime
 import dateutil.parser as parser
 import locale
 locale.setlocale(locale.LC_TIME,'')
