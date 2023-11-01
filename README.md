@@ -6,6 +6,6 @@
 ![Home of Feedreaderweb](home_feedreaderweb.png)
 
 
-### Exemple results.
+### Exemple results:
 
 ![Results of Feedreaderweb](results_feedreaderweb.png)
