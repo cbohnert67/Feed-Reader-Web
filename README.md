@@ -1,11 +1,13 @@
-# Feedreaderweb
+# Feed-Reader-Web
 
-### Simple feed reader web app that reads a given url and displays feeds content.
+Simple feed reader web app (written with Flask) that reads a given url and displays feeds content.
+
+Idea from [DevProjects by codementor](https://www.codementor.io/projects)
 
 
-![Home of Feedreaderweb](home_feedreaderweb.png)
+![Home of Feed-Reader-Web](home_feedreaderweb.png)
 
 
-### Example results:
+Example results:
 
-![Results of Feedreaderweb](results_feedreaderweb.png)
+![Results of Feed-Reader-Web](results_feedreaderweb.png)
